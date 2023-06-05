@@ -1,24 +1,23 @@
 import GlobalStyles from '@/styles/global';
 import type { AppProps } from 'next/app';
-import Head from 'next/head';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistStore } from 'redux-persist';
+import store from '@/state';
+import Meta from '@/components/Meta';
+import { Provider } from 'react-redux';
 
-function App({ Component, pageProps }: AppProps) {
+let persistor = persistStore(store);
+
+const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <>
-      <Head>
-        <title>NextJS Boilerplate</title>
-        <link rel="shortcut icon" href="/img/favicon.ico" />
-        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta
-          name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
-        />
-      </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
-    </>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Meta />
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </PersistGate>
+    </Provider>
   );
-}
+};
 
 export default App;

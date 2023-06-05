@@ -2,10 +2,14 @@
   "compilerOptions": {
     /* Language and Environment */
     "target": "esnext",
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
-    "jsx": "react-jsx",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "jsx": "preserve",
     "experimentalDecorators": true,
-
     /* Modules */
     "module": "es2020",
     "moduleResolution": "node",
@@ -14,26 +18,44 @@
     "noEmit": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
-    "types": ["node", "jest"],
-    "typeRoots": ["./node_modules/@types"],
-
+    "types": [
+      "node",
+      "jest"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     /* Emit */
     "sourceMap": true,
-
     /* Interop Constraints */
     "esModuleInterop": true,
-
     /* Type Checking */
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-
     /* Completeness */
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"],
-  "exclude": ["node_modules", ".storybook", "coverage", "generators"],
-  "typeRoots": ["./src/types/global.d.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".storybook",
+    "coverage",
+    "generators"
+  ],
+  "typeRoots": [
+    "./src/types/global.d.ts"
+  ]
 }
