@@ -1,20 +1,20 @@
 import { Story, Meta } from '@storybook/react';
 
-import Main from '.';
+import Example from '.';
 
 export default {
-  component: Main,
-  title: 'Main',
+  component: Example,
+  title: 'Example',
   args: {
     title: 'Test Title',
     description: 'Test Description',
   },
 } as Meta;
 
-export const Basic: Story = args => <Main {...args} />;
+export const Basic: Story = args => <Example {...args} />;
 Basic.args = {
   title: 'Basic Title',
   description: 'Basic Description',
 };
 
-export const Default: Story = args => <Main {...args} />;
+export const Default: Story = args => <Example {...args} />;

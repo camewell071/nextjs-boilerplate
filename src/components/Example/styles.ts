@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.main`
+export const Container = styled.div`
   background-color: #231651;
   color: #fff;
   width: 100%;
@@ -13,11 +13,11 @@ export const Wrapper = styled.main`
   justify-content: center;
 `;
 
-export const Title = styled.h1`
-  font-size: 2.5rem;
+export const Title = styled.p`
+  font-size: 2rem;
 `;
 
-export const Description = styled.h2`
+export const Description = styled.p`
   font-size: 2rem;
   font-weight: 400;
 `;
