@@ -37,7 +37,7 @@ const commonTheme = {
 export const darkTheme = {
   ...commonTheme,
 
-  'bg-primary': colors.dark['80'],
+  'bg-primary': colors.black,
 
   'text-primary': colors.light['100'],
   'text-secondary': colors.dark['10'],

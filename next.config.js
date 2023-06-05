@@ -1,9 +1,21 @@
-const withPWA = require('next-pwa');
-const isProd = process.env.NODE_ENV === 'production';
-
-module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    disable: !isProd,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  swcMinify: true,
+  output: 'standalone',
+  reactStrictMode: false,
+  productionBrowserSourceMaps: true,
+  images: {
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.trustless.computer',
+      },
+    ],
   },
-});
+  compiler: {
+    styledComponents: true,
+  },
+};
+
+module.exports = nextConfig;

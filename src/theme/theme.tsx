@@ -4,9 +4,10 @@ import { getTheme } from '@/theme/index';
 import { useAppSelector } from '@/state/hooks';
 import { isDarkSelector } from '@/state/application/selector';
 
-export default function ThemeProvider({ children }: { children: React.ReactNode }) {
+export default function ThemeProvider({ children }: { children: any }) {
   const darkMode = useAppSelector(isDarkSelector);
   const themeObject = useMemo(() => getTheme(darkMode), [darkMode]);
+  // @ts-ignore
   return <StyledComponentsThemeProvider theme={themeObject}>{children}</StyledComponentsThemeProvider>;
 }
 

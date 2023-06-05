@@ -11,12 +11,12 @@ module.exports = function (plop) {
     actions: [
       {
         type: 'add',
-        path: '../src/module/{{pascalCase name}}/index.tsx',
+        path: '../src/modules/{{pascalCase name}}/index.tsx',
         templateFile: 'templates/index.tsx.hbs',
       },
       {
         type: 'add',
-        path: '../src/module/{{pascalCase name}}/styles.ts',
+        path: '../src/modules/{{pascalCase name}}/styles.ts',
         templateFile: 'templates/styles.ts.hbs',
       },
     ],

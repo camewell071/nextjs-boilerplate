@@ -1,10 +1,10 @@
-import Main from '@/components/Example';
 import DefaultLayout from '@/layouts/Default';
+import Home from '@/modules/Home';
 
-export default function Home() {
+export default function Main() {
   return (
     <DefaultLayout>
-      <Main />
+      <Home />
     </DefaultLayout>
   );
 }
