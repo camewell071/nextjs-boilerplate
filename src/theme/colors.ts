@@ -23,6 +23,10 @@ export const colors = {
     '10': '#E7E7E7',
     '5': '#E5E5E5',
   },
+
+  blue: {
+    A: '#3772FF',
+  },
 };
 
 export type ColorsTheme = DefaultTheme;
@@ -41,6 +45,9 @@ export const darkTheme = {
 
   'text-primary': colors.light['100'],
   'text-secondary': colors.dark['10'],
+  'text-button': colors.light['100'],
+
+  'button-primary': colors.blue.A,
 };
 
 export const lightTheme = {
@@ -50,4 +57,7 @@ export const lightTheme = {
 
   'text-primary': colors.dark['100'],
   'text-secondary': colors.dark['60'],
+  'text-button': colors.light['100'],
+
+  'button-primary': colors.blue.A,
 };
