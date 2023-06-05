@@ -5,23 +5,11 @@ export const colors = {
   black: '#000000',
 
   dark: {
-    '100': '#1C1C1C',
-    '80': '#2E2E2E',
-    '60': '#5B5B5B',
-    '40': '#898989',
-    '20': '#B6B6B6',
-    '10': '#CECECE',
-    '5': '#ECECED',
+    '100': '#1B1E26',
   },
 
   light: {
     '100': '#FFFFFF',
-    '80': '#FAFAFA',
-    '60': '#F4F4F4',
-    '40': '#EFEFEF',
-    '20': '#E9E9E9',
-    '10': '#E7E7E7',
-    '5': '#E5E5E5',
   },
 
   blue: {
@@ -42,9 +30,9 @@ export const darkTheme = {
   ...commonTheme,
 
   'bg-primary': colors.black,
+  'bg-secondary': colors.dark['100'],
 
   'text-primary': colors.light['100'],
-  'text-secondary': colors.dark['10'],
   'text-button': colors.light['100'],
 
   'button-primary': colors.blue.A,
@@ -53,10 +41,10 @@ export const darkTheme = {
 export const lightTheme = {
   ...commonTheme,
 
-  'bg-primary': colors.light['80'],
+  'bg-primary': colors.light['100'],
+  'bg-secondary': colors.dark['100'],
 
   'text-primary': colors.dark['100'],
-  'text-secondary': colors.dark['60'],
   'text-button': colors.light['100'],
 
   'button-primary': colors.blue.A,

@@ -16,17 +16,17 @@ export const StyledButton = styled.button`
   }
 
   &.small {
-    padding: ${px2rem(11)} ${px2rem(16)};
+    padding: ${px2rem(18)} ${px2rem(16)};
     font-size: ${px2rem(16)};
   }
 
   &.normal {
-    padding: ${px2rem(11)} ${px2rem(34)};
+    padding: ${px2rem(18)} ${px2rem(34)};
     font-size: ${px2rem(16)};
   }
 
   &.stretch {
-    padding: ${px2rem(11)} ${px2rem(20)};
+    padding: ${px2rem(18)} ${px2rem(20)};
     width: 100%;
     font-size: ${px2rem(16)};
   }

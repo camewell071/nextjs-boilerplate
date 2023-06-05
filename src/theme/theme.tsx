@@ -19,7 +19,6 @@ export const ThemedGlobalStyle = createGlobalStyle`
   }
 
   html, body, #__next {
-    height: 100%;
   }
 
   html{
