@@ -11,7 +11,8 @@
     "pre-commit": "yarn format",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "generate-component": "yarn plop --plopfile generators/plop-component.js",
+    "generate-module": "yarn plop --plopfile generators/plop-module.js",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public"
   },
