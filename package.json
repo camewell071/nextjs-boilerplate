@@ -14,7 +14,8 @@
     "generate-component": "yarn plop --plopfile generators/plop-component.js",
     "generate-module": "yarn plop --plopfile generators/plop-module.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",

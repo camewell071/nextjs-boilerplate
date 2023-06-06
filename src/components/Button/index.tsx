@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, useEffect } from 'react';
+import React, { PropsWithChildren } from 'react';
 import { StyledButton } from './Button.styled';
 import { ButtonSizes, ButtonVariants } from '@/components/Button/button.type';
 import cs from 'classnames';
