@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 const BaseText = styled.p<{
   color: string | undefined;
-  align: string;
+  align: string | undefined;
   maxWidth: string | number;
 }>`
   color: ${({ color, theme }) => (color ? (theme as any)[color] : theme['text-primary'])};
-  text-align: ${({ align }) => align};
+  text-align: ${({ align }) => align || 'unset'};
   max-width: ${({ maxWidth }) => maxWidth};
   line-height: 140%;
 

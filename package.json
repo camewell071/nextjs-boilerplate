@@ -75,7 +75,7 @@
     "stylelint-config-standard": "^33.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
-    "typescript": "5.0.4",
+    "typescript": "^4.5.5",
     "typescript-plugin-styled-components": "^2.0.0"
   }
 }

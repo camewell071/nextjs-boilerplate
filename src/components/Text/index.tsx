@@ -34,7 +34,7 @@ const Text = ({
       className={cs(`size-${size}`, `weight-${fontWeight}`, className)}
       color={color}
       align={align}
-      maxWidth={maxWidth}
+      maxWidth={maxWidth!}
       style={{ ...style }}
       onClick={onClick}
     >
