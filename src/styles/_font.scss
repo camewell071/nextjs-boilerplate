@@ -6,3 +6,10 @@
   font-named-instance: 'Regular';
   src: url(/fonts/TitilliumWeb-Regular.ttf);
 }
+
+@supports (font-variation-settings: normal) {
+  * {
+    font-family: 'TitilliumWeb';
+    font-weight: 500;
+  }
+}

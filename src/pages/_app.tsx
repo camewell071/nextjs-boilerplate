@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import ThemeProvider, { ThemedGlobalStyle } from '@/theme/theme';
 import Web3Provider from '@/web3/provider';
 import { ConnectorProvider } from '@/contexts/connector.context';
+import '@/styles/index.scss';
 
 let persistor = persistStore(store);
 
