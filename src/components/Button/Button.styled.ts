@@ -3,12 +3,13 @@ import px2rem from '@/utils/rem';
 
 export const StyledButton = styled.button`
   border-width: 1px;
-  border-radius: 200px;
+  border-radius: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 12px;
+  border-color: transparent;
 
   &.primary {
     background-color: ${({ theme }) => theme['button-primary']};
@@ -17,18 +18,18 @@ export const StyledButton = styled.button`
 
   &.small {
     padding: ${px2rem(18)} ${px2rem(16)};
-    font-size: ${px2rem(16)};
+    font-size: ${px2rem(20)};
   }
 
   &.normal {
     padding: ${px2rem(18)} ${px2rem(34)};
-    font-size: ${px2rem(16)};
+    font-size: ${px2rem(20)};
   }
 
   &.stretch {
     padding: ${px2rem(18)} ${px2rem(20)};
     width: 100%;
-    font-size: ${px2rem(16)};
+    font-size: ${px2rem(20)};
   }
 
   &:hover {
@@ -47,4 +48,6 @@ export const StyledButton = styled.button`
   .spinner {
     margin-left: 12px;
   }
+
+  transition: all 0.1s ease-in-out;
 `;
